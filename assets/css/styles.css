@@ -9,39 +9,31 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-ul {
-    list-style: none;
-    display: flex;
+header {
+    height: calc(100vh - 100px);
+    background: no-repeat center/cover url('header-image.jpg');
 }
 
-li {
-    margin: 0px 15px;
-}
-
-nav {
+header nav {
     display: flex;
     justify-content: space-between;
     margin: 0px 30px;
     color: #fff;
 }
 
-nav p {
+header nav p {
     font-weight: bold;
 }
 
-button {
-    padding: 10px 15px;
-    border-radius: 6px;
-    font-weight: bold;
-    border: 0;
-    background: #467a81;
-
+header nav ul {
+    list-style: none;
+    display: flex;
 }
 
-header {
-    height: calc(100vh - 100px);
-    background: no-repeat center/cover url('header-image.jpg');
+header nav ul li {
+    margin: 0px 15px;
 }
+
 
 .header-content {
     max-width: 400px;
@@ -50,6 +42,47 @@ header {
     text-align: center;
 }
 
+
 .header-content h1 {
+    font-size: 3rem;
     margin-bottom: 8px;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 6px;
+    width: 100px;
+    border: 0;
+    background: #467a81;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+travel-packages {
+    background:
+}
+
+/* RESPONSIVE */
+
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 767px) {}
+
+/* Landscape phone and down */
+
+@media (max-width: 480px) {
+    header nav ul {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background: #467a81;
+        height: 56px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
 }
