@@ -58,9 +58,105 @@ button {
     font-weight: bold;
 }
 
-travel-packages {
-    background:
+.travel-packages {
+    background-color: #041317;
+    padding: 18px 0;
+
 }
+
+.travel-packages .travel-packages-title {
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+.travel-packages-cards {
+    display: flex;
+}
+
+.travel-packages .card {
+    color: white;
+    background-color: #1e3834;
+    width: 250px;
+    height: 350px;
+    border-radius: 14px;
+    margin: 25px auto;
+    position: relative;
+
+
+}
+
+.travel-packages .card .card-tag p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: white;
+    font-weight: bold;
+}
+
+.travel-packages .card .card-tag-top {
+    position: absolute;
+    right: 0;
+    background: red;
+    border-radius: 8px 0 0 8px;
+    padding: 6px 16px;
+    top: 15px;
+
+}
+
+.travel-packages .card .card-tag-bottom {
+    position: absolute;
+    left: 0;
+    background: red;
+    border-radius: 0 8px 8px 0;
+    top: 100px;
+    padding: 6px 16px;
+
+}
+
+
+.travel-packages .card-image {
+    width: 250px;
+    height: 150px;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.travel-packages .card-content {
+    margin-bottom: 0;
+    padding: 0 16px;
+}
+
+.travel-packages .card-content p {
+    font-size: 0.8rem;
+}
+
+.travel-packages .card-content h1 {
+    font-size: 1.5rem;
+}
+
+.travel-packages .card-content ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+
+
+.travel-packages .card-content ul li {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.travel-packages .card-content li svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+
+
 
 /* RESPONSIVE */
 
@@ -83,6 +179,16 @@ travel-packages {
         display: flex;
         justify-content: space-around;
         align-items: center;
-
     }
+
+    .header-content {
+        max-width: 400px;
+        margin: 300px auto;
+    }
+
+    header nav p {
+        width: 100%;
+        text-align: center;
+    }
+
 }
