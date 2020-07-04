@@ -65,14 +65,19 @@ button {
 }
 
 .travel-packages .travel-packages-title {
-    width: 100%;
-    text-align: center;
+    max-width: 950px;
     color: white;
-    margin: 0;
+    margin: auto;
+    padding: 20px 15px;
+    ;
 }
 
 .travel-packages-cards {
     display: flex;
+    margin: 15px auto;
+    max-width: 950px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .travel-packages .card {
@@ -81,7 +86,7 @@ button {
     width: 250px;
     height: 350px;
     border-radius: 14px;
-    margin: 25px auto;
+    margin: 25px;
     position: relative;
 
 
@@ -119,6 +124,7 @@ button {
     width: 250px;
     height: 150px;
     border-radius: 16px 16px 0px 0px;
+    object-fit: cover;
 }
 
 .travel-packages .card-content {
@@ -167,6 +173,11 @@ button {
 /* Landscape phone and down */
 
 @media (max-width: 480px) {
+
+    body {
+        margin-bottom: 55px;
+    }
+
     header nav ul {
         position: fixed;
         bottom: 0;
@@ -179,6 +190,7 @@ button {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        z-index: 99;
     }
 
     .header-content {
