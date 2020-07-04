@@ -161,8 +161,51 @@ button {
     margin-right: 10px;
 }
 
+.services {
+    padding: 16px;
+}
+
+.services .services-title {
+    text-align: center;
+    padding: 35px 0;
+}
+
+.services .services-cards {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 950px;
+    justify-content: center;
+    margin: auto;
+}
+
+.services .card svg {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 30px;
+    transition: all 1s;
+
+}
+
+.services .card svg:hover {
+    stroke: grey;
+    transform: scale(1.1);
+}
+
+.services .services-cards .card {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 25px;
+
+}
 
 
+.services .card .card-content {
+    height: 180px;
+    text-align: center;
+}
 
 /* RESPONSIVE */
 
