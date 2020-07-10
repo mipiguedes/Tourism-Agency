@@ -11,7 +11,16 @@ body {
 
 header {
     height: calc(100vh - 100px);
-    background: no-repeat center/cover url('header-image.jpg');
+    background: no-repeat bottom/cover url('header-image2.jpg');
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 header nav {
@@ -36,15 +45,15 @@ header nav ul li {
 
 
 .header-content {
-    max-width: 400px;
-    margin: 200px auto;
+    max-width: 500px;
+    margin: 220px auto;
     color: #fff;
     text-align: center;
 }
 
 
 .header-content h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 8px;
 }
 
@@ -53,20 +62,21 @@ button {
     border-radius: 6px;
     width: 100px;
     border: 0;
-    background: #467a81;
+    background: #4b9dcd;
     font-family: 'Montserrat';
     font-weight: bold;
+    color: white;
 }
 
 .travel-packages {
-    background-color: #041317;
-    padding: 18px 0;
+    background-color: #fff;
+    padding: 50px;
 
 }
 
 .travel-packages .travel-packages-title {
     max-width: 950px;
-    color: white;
+    color: #4b9dcd;
     margin: auto;
     padding: 20px 15px;
     ;
@@ -82,12 +92,13 @@ button {
 
 .travel-packages .card {
     color: white;
-    background-color: #1e3834;
+    background-color: #fff;
     width: 250px;
     height: 350px;
     border-radius: 14px;
     margin: 25px;
     position: relative;
+    box-shadow: 0 2px 8px 0 rgba(32, 33, 36, .28);
 
 
 }
@@ -109,10 +120,11 @@ button {
 
 }
 
+
 .travel-packages .card .card-tag-bottom {
     position: absolute;
     left: 0;
-    background: red;
+    background: #4b9dcd;
     border-radius: 0 8px 8px 0;
     top: 100px;
     padding: 6px 16px;
@@ -123,17 +135,20 @@ button {
 .travel-packages .card-image {
     width: 250px;
     height: 150px;
-    border-radius: 16px 16px 0px 0px;
+    border-radius: 14px 14px 0px 0px;
     object-fit: cover;
 }
 
 .travel-packages .card-content {
     margin-bottom: 0;
     padding: 0 16px;
+    color: #4b9dcd;
 }
 
 .travel-packages .card-content p {
     font-size: 0.8rem;
+    color: grey;
+
 }
 
 .travel-packages .card-content h1 {
@@ -153,6 +168,7 @@ button {
     display: flex;
     align-items: center;
     margin: 5px 0;
+    color: grey;
 }
 
 .travel-packages .card-content li svg {
@@ -162,12 +178,13 @@ button {
 }
 
 .services {
-    padding: 16px;
+    padding: 30px 0 50px 0;
 }
 
 .services .services-title {
     text-align: center;
-    padding: 35px 0;
+    padding: 15px 0 50px 0;
+    color: #4b9dcd;
 }
 
 .services .services-cards {
@@ -183,11 +200,12 @@ button {
     height: 60px;
     margin-bottom: 30px;
     transition: all 1s;
+    color: #4b9dcd;
 
 }
 
 .services .card svg:hover {
-    stroke: grey;
+    stroke: #00224b;
     transform: scale(1.1);
 }
 
@@ -197,17 +215,113 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 25px;
+    margin: 30px;
 
 }
 
 
 .services .card .card-content {
     height: 180px;
+    max-width: 200px;
     text-align: center;
+    color: grey;
 }
 
+.contact {
+    padding: 60px;
+    position: relative;
+}
+
+.contact .contact-card {
+    width: 350px;
+    height: 300px;
+    background: #ffc905;
+    position: absolute;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    top: calc(50% - 150px);
+    left: calc(25% - 175px);
+    border-radius: 8px;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+}
+
+.contact-card .contact-content {
+    color: white;
+
+}
+
+.contact-card .contact-content h1 {
+    text-align: left;
+    padding-left: 45px;
+}
+
+.contact-card .contact-content li {
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+}
+
+.contact-card .contact-content li svg {
+    width: 16px;
+    margin: 8px;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+footer {
+    background-color: #4b9dcd;
+    max-height: 180px;
+    padding: 15px;
+}
+
+.footer-title {
+    margin-left: 10px;
+    color: #fff;
+}
+
+.footer-content {
+    color: #fff;
+    margin-left: 20px;
+}
+
+.footer-icons svg {
+    height: 22px;
+    width: 22px;
+    margin-right: 10px;
+}
+
+
+
 /* RESPONSIVE */
+
+/* Landscape section contact map */
+
+@media (max-width: 950px) {
+    .contact {
+        padding: 60px 0;
+    }
+
+    .contact .contact-card {
+        left: 40px;
+    }
+}
+
+@media (max-width: 800px) {
+    .contact {
+        padding: 20px 0;
+    }
+
+    .contact .contact-card {
+        position: static;
+        margin: 40px auto;
+    }
+}
 
 /* Landscape phone to portrait tablet */
 
@@ -228,7 +342,7 @@ button {
         width: 100%;
         padding: 0;
         margin: 0;
-        background: #467a81;
+        background: #4b9dcd;
         height: 56px;
         display: flex;
         justify-content: space-around;
@@ -238,12 +352,17 @@ button {
 
     .header-content {
         max-width: 400px;
-        margin: 300px auto;
+        margin: 260px auto;
     }
 
     header nav p {
         width: 100%;
         text-align: center;
+    }
+
+    .header-content h1 {
+        font-size: 3rem;
+        margin-bottom: 8px;
     }
 
 }

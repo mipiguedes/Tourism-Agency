@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Tourism Agency</title>
+    <title>Travel Agency</title>
     <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="assets/css/styles.css">
 
@@ -17,32 +17,29 @@
     <header>
         <nav>
             <!--<img src="" alt="Logo Tourism Agency">-->
-            <p>Tourism Agency</p>
+            <p>Travel Agency</p>
             <ul>
-                <li>Home</li>
-                <li>Destination</li>
-                <li>Services</li>
-                <li>Contact</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destination">Destination</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
 
         </nav>
-        <div class="header-content">
-            <h1>Travel the World</h1>
+        <div id="home" class="header-content">
+            <h1>Travel Agency</h1>
             <p>Meet the beautiful world with us.</p>
 
             <button>Explore</button>
         </div>
     </header>
 
-    <section class="travel-packages">
+    <section id="destination" class="travel-packages">
         <h1 class="travel-packages-title">WHERE TO GO</h1>
         <div class="travel-packages-cards">
             <div class="card">
-                <div class="card-tag card-tag-top">
-                    <p>Sale</p>
-                </div>
                 <div class="card-tag card-tag-bottom">
-                    <p>$3.000</p>
+                    <p>$5.000</p>
                 </div>
                 <img class="card-image" src="https://images.unsplash.com/photo-1509529711801-deac231925ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80">
                 <div class="card-content">
@@ -55,7 +52,7 @@
                             <i data-feather="map-pin"></i> Travel Packages 5/night
                         </li>
                         <li>
-                            <i data-feather="coffee"></i> with Breakfast
+                            <i data-feather="coffee"></i> Caban with Breakfast
                         </li>
                         <li>
                             <i data-feather="wifi"></i> Wi-Fi
@@ -65,9 +62,6 @@
                 </div>
             </div>
             <div class="card">
-                <div class="card-tag card-tag-top">
-                    <p>Sale</p>
-                </div>
                 <div class="card-tag card-tag-bottom">
                     <p>$3.000</p>
                 </div>
@@ -79,13 +73,13 @@
                     </div>
                     <ul>
                         <li>
-                            <i data-feather="map-pin"></i> Travel Packages 5/night
+                            <i data-feather="map-pin"></i> Travel Packages 7/night
                         </li>
                         <li>
                             <i data-feather="coffee"></i> with Breakfast
                         </li>
                         <li>
-                            <i data-feather="wifi"></i> Wi-Fi
+                            <i data-feather="briefcase"></i> Petfriendly
                         </li>
 
                     </ul>
@@ -102,17 +96,17 @@
                 <div class="card-content">
                     <div class="card-title">
                         <p>Destination</p>
-                        <h1>Oregon, Portland</h1>
+                        <h1>Oregon, USA</h1>
                     </div>
                     <ul>
                         <li>
-                            <i data-feather="map-pin"></i> Travel Packages 5/night
+                            <i data-feather="map-pin"></i> Travel Packages 10 days
                         </li>
                         <li>
                             <i data-feather="coffee"></i> with Breakfast
                         </li>
                         <li>
-                            <i data-feather="wifi"></i> Wi-Fi
+                            <i data-feather="map"></i> Guide Tour
                         </li>
 
                     </ul>
@@ -121,8 +115,8 @@
         </div>
     </section>
 
-    <section class="services">
-        <h1 class="services-title">Services</h1>
+    <section id="services" class="services">
+        <h1 class="services-title">OUR SERVICES</h1>
         <div class="services-cards">
             <div class="card">
                 <i data-feather="map"></i>
@@ -153,8 +147,77 @@
 
     </section>
 
+    <section id="contact" class="contact">
+        <div class="contact-card">
+            <div class="contact-content">
+                <h1>Contact Us</h1>
+                <ul>
+                    <li><i data-feather="navigation"></i>Washigton Street, 896</li>
+                    <li><i data-feather="mail"></i>milena.guedes@trips.com</li>
+                    <li><i data-feather="phone"></i>9999 9999</li>
+
+                </ul>
+            </div>
+
+        </div>
+        <div id="map"></div>
+
+    </section>
+
+    <footer>
+        <div class="footer-title">
+            <h3>Travel Agency Comp.</h3>
+        </div>
+        <div class="footer-content">
+            <p>Follow us on our social midias</p>
+            <div class="footer-icons">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M156.23893,0h-140.47786c-8.5944,0 -15.76107,7.16667 -15.76107,15.76107v140.47786c0,8.5944 7.16667,15.76107 15.76107,15.76107h70.23893v-71.66667h-21.5v-21.5h21.5v-21.5c0,-17.91667 7.16667,-28.66667 28.66667,-28.66667h21.5v21.5h-9.32226c-6.43881,0 -12.17774,5.73893 -12.17774,12.17774v16.48893h28.66667l-3.58333,21.5h-25.08333v71.66667h41.57226c8.5944,0 15.76107,-7.16667 15.76107,-15.76107v-140.47786c0,-8.5944 -7.16667,-15.76107 -15.76107,-15.76107z"></path></g></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="26" height="26" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M49.92548,0c-27.49519,0 -49.92548,22.43029 -49.92548,49.92548v72.14904c0,27.49519 22.43029,49.92548 49.92548,49.92548h72.14904c27.49519,0 49.92548,-22.43029 49.92548,-49.92548v-72.14904c0,-27.49519 -22.43029,-49.92548 -49.92548,-49.92548zM49.92548,13.23077h72.14904c20.33714,0 36.69471,16.33173 36.69471,36.69471v72.14904c0,20.33714 -16.33173,36.69471 -36.69471,36.69471h-72.14904c-20.33714,0 -36.69471,-16.33173 -36.69471,-36.69471v-72.14904c0,-20.33714 16.33173,-36.69471 36.69471,-36.69471zM135.61538,26.46154c-5.47837,0 -9.92308,4.44471 -9.92308,9.92308c0,5.47837 4.44471,9.92308 9.92308,9.92308c5.47837,0 9.92308,-4.44471 9.92308,-9.92308c0,-5.47837 -4.44471,-9.92308 -9.92308,-9.92308zM86,39.69231c-25.50541,0 -46.30769,20.80228 -46.30769,46.30769c0,25.50541 20.80228,46.30769 46.30769,46.30769c25.50541,0 46.30769,-20.80228 46.30769,-46.30769c0,-25.50541 -20.80228,-46.30769 -46.30769,-46.30769zM86,52.92308c18.34736,0 33.07692,14.72957 33.07692,33.07692c0,18.34736 -14.72956,33.07692 -33.07692,33.07692c-18.34735,0 -33.07692,-14.72956 -33.07692,-33.07692c0,-18.34735 14.72957,-33.07692 33.07692,-33.07692z"></path></g></g></svg>
+            </div>
+
+        </div>
+
+
+    </footer>
+
     <script>
-        feather.replace()
+        feather.replace();
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            var uluru = {
+                lat: -25.344,
+                lng: 131.036
+            };
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+                document.getElementById('map'), {
+                    zoom: 4,
+                    center: uluru
+                });
+            // The marker, positioned at Uluru
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+
+    </script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?&callback=initMap">
+
+
     </script>
 </body>
 
